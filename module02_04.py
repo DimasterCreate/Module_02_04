@@ -1,0 +1,17 @@
+numbers = [1, 2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14, 15]
+prime = []
+not_primes = []
+for i in range(2, len(numbers) + 1):
+    k = 0
+    for j in [2, 3]:
+        if i % j == 0 and i != j :
+            k += 1
+    if k != 0 :
+        not_primes.append(i)
+    else:
+        prime.append(i)
+print('prime = ', prime)
+print('not_primes = ', not_primes)
+
+
+
